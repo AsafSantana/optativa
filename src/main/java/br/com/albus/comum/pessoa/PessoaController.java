@@ -22,6 +22,11 @@ public class PessoaController extends GenericController<Pessoa, PessoaRepository
     }
 
     @Override
+    public void excluir(Long idEntity) {
+        throw new GenericRuntimeException("Não permitido", null);
+    }
+
+    @Override
     public Pessoa editar(Pessoa enditadeAEditar) {
         throw new GenericRuntimeException("Vc deve utilizar o recurso /pessoa/fisica ou /pessoa/juridica", null);
     }
