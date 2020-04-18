@@ -13,6 +13,9 @@ import java.util.Objects;
 @Component
 public class PessoaController extends GenericController<Pessoa, PessoaRepository, Long> {
 
+    @Autowired
+    private PessoaRepository repository;
+
     @Override
     public Pessoa inserir(Pessoa entityNova) {
         throw new GenericRuntimeException("Vc deve utilizar o recurso /pessoa/fisica ou /pessoa/juridica", null);
@@ -20,7 +23,7 @@ public class PessoaController extends GenericController<Pessoa, PessoaRepository
 
     @Override
     public void excluir(Long idEntity) {
-        throw new GenericRuntimeException("Não permitido", null);
+        throw new GenericRuntimeException("Não permitido Eduardo balan.", null);
     }
 
     @Override
