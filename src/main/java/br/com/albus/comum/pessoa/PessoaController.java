@@ -21,6 +21,7 @@ public class PessoaController extends GenericController<Pessoa, PessoaRepository
         //TODO Lucas
         //TODO Eduardo Balan
         //Asaf Santana
+        //Teste
         throw new GenericRuntimeException("Vc deve utilizar o recurso /pessoa/fisica ou /pessoa/juridica", null);
     }
 
